@@ -25,7 +25,8 @@ header h1 {
 
 .players {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .player-img img {
@@ -34,4 +35,15 @@ header h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.player,
+.budget,
+.selected {
+    border: 2px solid red;
+}
+
+.calculation {
+    display: flex;
+    flex-direction: column;
 }
