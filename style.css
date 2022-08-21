@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    height: 450px;
+    height: 500px;
     background: url(images/Facebook-Cover-1640680-VR_04.jpeg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -37,13 +37,31 @@ header h1 {
     margin-right: auto;
 }
 
-.player,
+.player {
+    border: 2px solid rgba(128, 128, 128, 0.445);
+    border-radius: 10px;
+    padding: 12px;
+}
+
 .budget,
 .selected {
-    border: 2px solid red;
+    background-color: black;
 }
 
 .calculation {
     display: flex;
     flex-direction: column;
+}
+
+.selected {
+    height: 300px;
+}
+
+input {
+    background-color: black;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    font-weight: 500;
+    padding: 6px;
 }
