@@ -59,4 +59,6 @@ const playerMoney = parseFloat(playerMoneyString);
 // sum 
 const totalMoney = playerMoney + coachFieldValue + managerFieldValue;
 // done the sum up here 
+// set the value 
+totalvalueElement.innerText = totalMoney;
 })
