@@ -65,3 +65,7 @@ input {
     font-weight: 500;
     padding: 6px;
 }
+
+.btn-bg {
+    background-color: rgb(13, 110, 253);
+}
