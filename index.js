@@ -15,17 +15,23 @@ function addToList(element) {
         li.innerText = playerName;
         placeList.appendChild(li);
         // done adding li to the list 
-        const playerNumber = placeList.childElementCount;
-        
-        return playerNumber;
     }
 }
 
 
-
-document.getElementById('calculate-btn').addEventListener('click', function(){
-// get the input field value 
+document.getElementById('calculate-btn').addEventListener('click', function () {
+    // get the input field value 
     const playerValue = document.getElementById('per-player-value').value;
-// gotten the input value 
+    // gotten the input value 
 
+    // got the player number 
+   let counter = document.getElementById('place-list').childElementCount;
+// player money here 
+   const playerTotal = counter * playerValue;
+//  got the money 
+// got the total player field 
+const previousPlayerMoneyELement = document.getElementById('player-expense');
+const previousPlayerMoney = previousPlayerMoneyELement.innerText;
+previousPlayerMoneyELement.innerText = playerTotal;
+// set the new player total here 
 })
