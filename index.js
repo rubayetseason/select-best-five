@@ -35,3 +35,28 @@ const previousPlayerMoney = previousPlayerMoneyELement.innerText;
 previousPlayerMoneyELement.innerText = playerTotal;
 // set the new player total here 
 })
+
+document.getElementById('calculate-total').addEventListener('click', function(){
+
+    // get the manager field number
+  const managerFieldValue = getValueByFieldId('manager-field');
+
+// get the coach field number 
+  const coachFieldValue = getValueByFieldId('coach-field');
+
+//   get total value field 
+const totalvalueElement = document.getElementById('total-value'); 
+const totalvalueString = totalvalueElement.innerText;
+const totalvalue = parseFloat(totalvalueString);
+// got the total value up there 
+
+// player total here 
+const playerMoneyELement = document.getElementById('player-expense');
+const playerMoneyString = playerMoneyELement.innerText;
+const playerMoney = parseFloat(playerMoneyString);
+// got the total player money up there 
+
+// sum 
+const totalMoney = playerMoney + coachFieldValue + managerFieldValue;
+// done the sum up here 
+})
