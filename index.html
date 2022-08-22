@@ -39,7 +39,7 @@
                             <h6 class="text-center mt-1 text-secondary">39 Goals ● 11 Assists</h6>
                             <div>
                                 <button
-                                    class="w-75 d-block mx-auto bg-primary text-white  fw-semibold py-2 fs-5" onclick="addToList(this)">SELECT</button>
+                                    class="w-75 d-block mx-auto bg-primary text-white  fw-semibold py-2 fs-5 btn-disable" onclick="addToList(this)">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -164,9 +164,9 @@
                     <div class="budget mt-3">
                         <h3 class="text-center mt-4 fw-semibold text-decoration-underline">Budget</h3>
                         <div class="d-flex justify-content-evenly mt-4">
-                            <h4>Per Player</h4> <input type="text">
+                            <h4>Per Player</h4> <input type="text" id="per-player-value">
                         </div>
-                        <button class="w-75 d-block mx-auto bg-primary text-white py-2 fs-5 mt-4">Calculate</button>
+                        <button class="w-75 d-block mx-auto bg-primary text-white py-2 fs-5 mt-4" id="calculate-btn">Calculate</button>
                         <div class="d-flex justify-content-evenly mt-5">
                             <h4>Player Expense</h4>
                             <h4><span>0000</span> $</h4>
